@@ -1,0 +1,40 @@
+<div class="banner"></div>
+<div class="body-content">
+    <div class="content">
+        <div class="content-header">
+            <p>New Arrivals</p>
+        </div>
+        <div class="item-container">
+            <div class="item-list">
+                <ng-template ngFor [ngForOf]="data" let-pr>
+                    <a [routerLink]="['/product/',pr.name]"><img class="item" src="/assets/{{pr.imageName}}"></a>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <p>Electronics</p>
+        </div>
+        <div class="item-container">
+            <div class="item-list">
+                <ng-template ngFor [ngForOf]="data" let-pr>
+                    <a *ngIf="pr.category=='Electronics'" [routerLink]="['/product/',pr.name]"><img class="item" src="/assets/{{pr.imageName}}"></a>
+                </ng-template>
+            </div>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <p>Clothing</p>
+        </div>
+        <div class="item-container">
+            <div class="item-list">
+                <ng-template ngFor [ngForOf]="data" let-pr>
+                    <a *ngIf="pr.category=='Clothing'" [routerLink]="['/product/',pr.name]"><img class="item" src="/assets/{{pr.imageName}}"></a>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

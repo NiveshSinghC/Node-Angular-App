@@ -1,0 +1,135 @@
+<div class="product-body" *ngIf="data">
+    <div class="product-image">
+        <!-- <div class="img-bg" ></div> -->
+        <!-- Original coding   -->
+        <img class="img-bg" src="/assets/{{data.imageName}}" alt="">
+        <!-- dynamic chnging image src code(JUGAAD)   -->
+        <div class="small-img">
+            <div class="img-sm"></div>
+            <div class="img-sm"></div>
+            <div class="img-sm"></div>
+            <div class="img-sm"></div>
+        </div>
+    </div>
+    <div class="product-details">
+        <div class="product-top-dt">
+            <p>{{data.name}}</p>
+            <small>{{data.shortDescription}}</small>
+            <hr>
+        </div>
+        <div class="product-info">
+            <form action="" method="post">
+                <input type="submit" name="wish-submit" value="Add to wishlist">
+            </form>
+            <div class="info-ct">
+                <p>Cash on Delivery Eligible</p>
+                <p>EMI available</p>
+            </div>
+            <div class="info-do">
+                <div class="select-qt">
+                    <p>Quantity</p>
+                    <p class="quan">{{quantity}}</p>
+                    <div class="inc-dec">
+                        <div class="arrow" (click)="increase()"></div>
+                        <div class="arrow" (click)="decrease()"></div>
+                    </div>
+                </div>
+                <div class="info-do-left">
+                    <p>INSTOCK</p>
+                    <a href=""><i class="fa fa-map-marker"></i>select dilevery location</a>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-info">
+                <div class="price">
+                    <p><i class="fa fa-inr"></i>{{data.salePrice}}</p>
+                    <p><i class="fa fa-inr"></i>{{data.price}}</p>
+                </div>
+                <div class="del-time">
+                    <a href="">Details</a>
+                    <p><b>2-4</b> Days Dilevery Time</p>
+                </div>
+            </div>
+            <div class="seller-dt">
+                <div class="seller-info">
+                    <p><b>Sold by -</b> Mohan Stores</p>
+                    <p>shop no. 12/5 Kaisergnaj, circle road infront of moti hotel ,Ajmer</p>
+                </div>
+                <input type="submit" name="seller-choose" value="Select Your Shop">
+            </div>
+        </div>
+        <div class="submit-btn">
+            <form (click)="addToCart({name:data.name,imagename:data.imageName,price:data.price,saleprice:data.salePrice,quantity:quantity-0})" class="buy-btn" [routerLink]="['/cart']" method="post">
+                <input [disabled]="quantity==0" type="submit" name="buy-btn" value="Buy">
+            </form>
+            <form (click)="addToCart({name:data.name,imagename:data.imageName,price:data.price,saleprice:data.salePrice,quantity:quantity-0})" class="cart-btn" method="post">
+                <input [disabled]="quantity==0" type="submit" name="cart-btn" value="Add to Cart">
+            </form>
+        </div>
+
+
+    </div>
+</div>
+<div class="product-desc" *ngIf="data">
+    <div class="description">
+        <p>Description</p>
+        <hr>
+        <p>{{data.fullDescription}}</p>
+    </div>
+    <div class="features">
+        <p>Features</p>
+        <hr>
+        <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>ollicitudin. Nullam </li>
+            <li>erat at posuere commodo, </li>
+            <li>Cras vestibulum vulputate </li>
+            <li>tellus urna gravida arcu, </li>
+        </ul>
+    </div>
+    <div class="cust-reviews">
+        <p>Customers Reviews on this Product</p>
+        <hr>
+        <div class="rev-form">
+            <textarea name="views" rows="5" cols="80" placeholder="Type your Views here...."></textarea>
+            <form action="" method="post">
+                <input type="text" name="rv-email" placeholder="Type Your Email Here">
+                <input type="submit" name="rv-submit" value="Review">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="cust-comments" *ngIf="data">
+    <ng-template ngFor [ngForOf]="data.review" let-cust let-i="index" data-index="#i">
+
+        <div class="comment-sec">
+            <div class="commentor-det">
+                <p>{{cust.custname}} ~ </p>
+                <small>{{cust.custemail}}</small>
+            </div>
+            <div class="comment">
+                <p>{{cust.custreview}} </p>
+            </div>
+        </div>
+        <hr *ngIf="i != data.review.length -1  ">
+    </ng-template>
+    <!-- <div class="comment-sec">
+        <div class="commentor-det">
+          <p>{{data.review[1].custname}} ~ </p>
+          <small>{{data.review[1].custemail}}</small>
+        </div>
+        <div class="comment">
+          <p>{{data.review[1].custreview}}</p>
+        </div>
+      </div>
+      <hr>
+      <div class="comment-sec">
+        <div class="commentor-det">
+          <p>{{data.review[2].custname}} ~ </p>
+          <small>{{data.review[2].custemail}}</small>
+        </div>
+        <div class="comment">
+          <p>{{data.review[2].custreview}} </p>
+        </div>
+      </div> -->
+</div>

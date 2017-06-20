@@ -1,0 +1,105 @@
+.cart-body {
+  font-family: Times New Roman;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px; }
+  .cart-body i {
+    color: #252525;
+    margin-right: 5px; }
+  .cart-body .cart-head {
+    font-size: 40px;
+    margin-bottom: 10px; }
+  .cart-body .cart-table {
+    margin-bottom: 20px; }
+    .cart-body .cart-table table {
+      border-collapse: collapse;
+      width: 1200px;
+      margin: 0 auto; }
+    .cart-body .cart-table tr {
+      height: 50px;
+      border: 1px solid #acacac; }
+      .cart-body .cart-table tr th {
+        background: #363636;
+        height: 10px;
+        font-weight: bold;
+        color: #ebebeb;
+        padding: 10px; }
+        .cart-body .cart-table tr th:first-child {
+          width: 300px; }
+        .cart-body .cart-table tr th:nth-child(2) {
+          width: 600px; }
+        .cart-body .cart-table tr th:nth-child(3) {
+          width: 200px; }
+        .cart-body .cart-table tr th:nth-child(4) {
+          width: 200px; }
+      .cart-body .cart-table tr td {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        .cart-body .cart-table tr td .pr-img {
+          margin: 0 auto;
+          width: 100px;
+          height: 100px;
+          background: url(/assets/shirt1.jpg);
+          background-position: center;
+          background-size: 100% 100%;
+          background-repeat: norepeat; }
+  .cart-body .bottom-cart {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between; }
+    .cart-body .bottom-cart .coupon {
+      display: flex;
+      align-items: center;
+      font-family: calibri; }
+      .cart-body .bottom-cart .coupon p {
+        width: 100px;
+        padding: 5px;
+        text-align: center;
+        background: #252525;
+        color: #ebebeb; }
+      .cart-body .bottom-cart .coupon input[type='text'] {
+        height: 19px;
+        width: 200px;
+        padding: 5px;
+        background: #ebebeb;
+        border: none; }
+    .cart-body .bottom-cart .additional-p .add-tp {
+      margin-top: 3px; }
+    .cart-body .bottom-cart .additional-p .add-dc, .cart-body .bottom-cart .additional-p .add-tp {
+      display: flex;
+      font-family: calibri; }
+      .cart-body .bottom-cart .additional-p .add-dc .key, .cart-body .bottom-cart .additional-p .add-tp .key {
+        width: 150px;
+        background: #252525;
+        color: #ebebeb;
+        padding: 5px;
+        text-align: center; }
+      .cart-body .bottom-cart .additional-p .add-dc .value, .cart-body .bottom-cart .additional-p .add-tp .value {
+        width: 100px;
+        background: #ebebeb;
+        color: #252525;
+        padding: 5px;
+        text-align: center; }
+  .cart-body .pay-type {
+    font-family: Berlin Sans FB; }
+    .cart-body .pay-type p {
+      padding: 10px;
+      background: #252525;
+      color: #ebebeb;
+      margin-bottom: 20px; }
+    .cart-body .pay-type form li {
+      color: #252525;
+      list-style: none; }
+      .cart-body .pay-type form li input[type='radio'] {
+        margin-right: 5px; }
+    .cart-body .pay-type input[type='submit'] {
+      height: 30px;
+      width: 100px;
+      padding: 5px;
+      background: #ffd029;
+      border: none;
+      margin-top: 40px; }

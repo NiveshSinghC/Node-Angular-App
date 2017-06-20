@@ -1,0 +1,68 @@
+<header>
+    <p>OASIS</p>
+    <form class="search-form" action="" method="post">
+        <input type="text" name="search" placeholder="Type Your Search Here...">
+        <input type="submit" name="submit-btn" value="Search">
+    </form>
+</header>
+<!--<div class="linksbar">
+
+    <a class="sep" href="activities.php">Activities</a>
+    <div class="dropdown">
+        <button class="dropbtn">Facilities</button>
+        <div class="dropdown-content">
+            <a href="facilities.php">Main Facilities</a>
+            <a href="extra_facilities.php">Extra Facilities</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Rules and Regulations</button>
+        <div class="dropdown-content">
+            <a href="regulation.php">Rules and Regulations</a>
+            <a href="rules.php">Time Table</a>
+        </div>
+    </div>
+    <a class="sep" href="document/fa21617.pdf">Academics</a>
+    <a class="sep" href="gallery.php">Gallery</a>
+    <div class="dropdown">
+        <button class="dropbtn">Alumni</button>
+        <div class="dropdown-content">
+            <a href="html.php">Registration Form</a>
+            <a href="alumni_login.php">Login Here</a>
+        </div>
+    </div>
+    <a class="sep" href="cbse.php">CBSE Corner</a>
+    <a class="sep" href="student.php">Student Corner</a>
+    <a class="sep" href="staff.php">Staff orner</a>
+</div>-->
+<div class="navigation">
+    <ul class="nav-left">
+        <li class="dropdown">
+            <p class="dropbtn">Category</p>
+            <div class="dropdown-content">
+                <ng-template ngFor [ngForOf]="cat" let-ct>
+                    <a class="cat-main" href="">{{ct.name}}</a>
+                    <div class="cat-sub">
+                        <ng-template ngFor [ngForOf]="ct.subcat" let-sub>
+                            <a href="">{{sub.name}}</a>
+                        </ng-template>
+                    </div>
+                </ng-template>
+
+            </div>
+        </li>
+        <li><a class="sep" href="">Home</a> </li>
+        <li><a class="sep" href="">About us</a> </li>
+
+    </ul>
+    <ul class="nav-right">
+        <li>
+            <div class="bubble">
+                <p>Cart</p>
+                <div class="circle">
+                    <p>{{cartItemNo}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

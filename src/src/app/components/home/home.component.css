@@ -1,0 +1,83 @@
+.banner {
+    background: url(/assets/banner.png);
+    background-position: center;
+    background-size: 101% 350px;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+.content .content-header {
+    max-width: 700px;
+    height: 20px;
+    padding: 5px;
+    margin: 50px auto;
+    text-align: center;
+    background: #abeafb;
+    color: #353535;
+    font-family: Humnst777 Blk BT;
+}
+
+.content .item-container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.content .item-container .item-list {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+}
+
+
+/*.content .item-container .item-list .item1 {
+        margin-left: 15px;
+        margin-right: 15px;
+        /*background: url(/assets/shoe1.jpg);*/
+
+
+/*background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;*/
+
+
+/*height: 170px;
+        width: 170px; }
+      .content .item-container .item-list .item2 {*/
+
+
+/*background: url(/assets/mac.jpg);*/
+
+
+/*background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;*/
+
+
+/*height: 170px;
+        width: 170px; }
+      .content .item-container .item-list .item3 {*/
+
+
+/*background: url(/assets/imac.jpg);*/
+
+
+/*background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;*/
+
+
+/*height: 170px;
+        width: 170px; }*/
+
+.content .item-container .item-list .item {
+    /*background: url(/assets/iphone2.jpg);*/
+    /*background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;*/
+    height: 170px;
+    width: 170px;
+}

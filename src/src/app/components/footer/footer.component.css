@@ -1,0 +1,77 @@
+footer {
+  background: #252525;
+  margin-top: 80px;
+  padding: 10px;
+  height: 250px;
+  display: flex;
+  align-items: center; }
+  footer .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    footer .links .link-list {
+      display: flex;
+      flex-direction: column; }
+      footer .links .link-list .initials {
+        display: flex;
+        margin-left: 40px;
+        align-items: center;
+        color: #ebebeb;
+        margin-top: 45px; }
+        footer .links .link-list .initials p:first-child {
+          font-family: LilyUPC;
+          font-size: 21px;
+          font-weight: bold; }
+          footer .links .link-list .initials p:first-child:hover {
+            color: #ffcf26; }
+        footer .links .link-list .initials p:nth-child(2) {
+          margin-left: 5px;
+          font-family: calibri;
+          font-weight: bold;
+          font-size: 14px; }
+      footer .links .link-list .list {
+        display: flex; }
+        footer .links .link-list .list ul p {
+          font-family: arial;
+          font-weight: bold;
+          font-size: 18px;
+          color: #ebebeb; }
+        footer .links .link-list .list ul li {
+          list-style: none; }
+          footer .links .link-list .list ul li a {
+            text-decoration: none;
+            color: #ebebeb;
+            margin-left: 10px;
+            font-family: arial;
+            font-size: 12px; }
+            footer .links .link-list .list ul li a:hover {
+              color: #ffcf26; }
+    footer .links .feedback {
+      margin-right: 40px; }
+      footer .links .feedback p {
+        font-family: arial;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #ebebeb; }
+      footer .links .feedback form textarea {
+        display: block;
+        margin-bottom: 16px;
+        padding: 5px;
+        resize: none;
+        font-family: arial; }
+      footer .links .feedback form input[type='text'] {
+        width: 250px;
+        padding: 5px;
+        height: 20px;
+        margin-right: 11px; }
+      footer .links .feedback form input[type='submit'] {
+        width: 100px;
+        height: 34px;
+        padding: 5px;
+        background: #ffcf26;
+        border: none;
+        color: #252525;
+        font-size: 11px; }
+        footer .links .feedback form input[type='submit']:hover {
+          background: #d8a900; }

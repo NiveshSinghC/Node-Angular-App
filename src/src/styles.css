@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: calibri;
+  src: url(/assets/font/calibri.ttf); }
+@font-face {
+  font-family: arial;
+  src: url(/assets/font/arial.ttf); }
+@font-face {
+  font-family: LilyUPC;
+  src: url(/assets/font/upcll.ttf); }
+@font-face {
+  font-family: Humnst777 Blk BT;
+  src: url(/assets/font/tt0861m_.ttf); }
+*{
+  margin: 0;
+}
+i {
+  color: #ebebeb;
+  margin-left: 5px; }

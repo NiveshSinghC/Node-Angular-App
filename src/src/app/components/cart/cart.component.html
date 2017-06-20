@@ -1,0 +1,65 @@
+<div class="cart-body">
+    <p class="cart-head">My Cart</p>
+    <div class="cart-table">
+        <table>
+            <tr>
+                <th>Product </th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <ng-template ngFor [ngForOf]="itemInCart" let-item>
+                <tr>
+                    <td>
+                        <img class="pr-img" src="/assets/{{item.imagename}}">
+                    </td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td><i class="fa fa-inr"></i>{{item.saleprice}}</td>
+                </tr>
+            </ng-template>
+            <!--<tr>
+                <td>
+                    <div class="pr-img"></div>
+                </td>
+                <td>{{itemInCart[0].name}}</td>
+                <td>1</td>
+                <td><i class="fa fa-inr"></i>1500</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="pr-img"></div>
+                </td>
+                <td>Tshirt-Flowing Colour Pattern</td>
+                <td>1</td>
+                <td><i class="fa fa-inr"></i>1500</td>
+            </tr>-->
+        </table>
+    </div>
+    <div class="bottom-cart">
+        <div class="coupon">
+            <p>COUPON</p>
+            <input type="text" name="coupon" placeholder="Type Your coupon code here...">
+        </div>
+        <div class="additional-p">
+            <div class="add-dc">
+                <p class="key">Delivery Charges</p>
+                <p class="value">N/A</p>
+            </div>
+            <div class="add-tp">
+                <p class="key">Total Price</p>
+                <p class="value"><i class="fa fa-inr"></i>{{totalPrice()}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="pay-type">
+        <p>Select A Payment Type</p>
+        <form>
+            <li><input checked type="radio" name="pay-type" value="Debit Card">Debit Card</li>
+            <li><input type="radio" name="pay-type" value="Credit Card">Credit Card</li>
+            <li><input type="radio" name="pay-type" value="Cash On Delivery">Cash On Delivery</li>
+            <li><input type="radio" name="pay-type" value="PayPal">PayPal</li>
+        </form>
+        <input type="submit" name="pay-sub" value="Proceed">
+    </div>
+</div>
